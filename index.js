@@ -1,6 +1,5 @@
 const {Client, MessageEmbed, Intents, Collection, Constants, Interaction} = require("discord.js");
 const fs = require("fs");
-const { cmd } = require("./commands/random");
 const token = fs.existsSync("./Token.json") ? require("./Token.json").Token : process.env.Token;
 const {REST} = require("@discordjs/rest");
 const {Routes} = require("discord-api-types/v9");
@@ -29,7 +28,7 @@ const rest = new REST({version: '9'}).setToken(token);
 
         await rest.put(
             Routes.applicationGuildCommands(clientID, guildID),
-            {body: []} // set commands here
+            {body: commands} // set commands here
         );
         await rest.put(
             Routes.applicationCommands(clientID),

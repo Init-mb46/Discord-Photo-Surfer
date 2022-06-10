@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/Init-mb46/Discord-Photo-Surfer.git"
   },
+  "engines": {
+    "node": "16.9.1",
+    "npm": "7.24.0"
+  },
   "author": "mb46",
   "license": "ISC",
   "bugs": {
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/Init-mb46/Discord-Photo-Surfer#readme",
   "dependencies": {
+    "@discordjs/builders": "^0.15.0",
     "@discordjs/rest": "^0.5.0",
     "discord-api-types": "^0.33.5",
     "discord.js": "^13.8.0"
