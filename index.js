@@ -29,11 +29,11 @@ const rest = new REST({version: '9'}).setToken(token);
 
         await rest.put(
             Routes.applicationGuildCommands(clientID, guildID),
-            {body: []}
+            {body: []} // set commands here
         );
         await rest.put(
             Routes.applicationCommands(clientID),
-            {body: []}
+            {body: []} // set global commands here
         );
         console.log("successfully registered commands");
     } catch (e) {
