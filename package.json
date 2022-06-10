@@ -1,0 +1,22 @@
+{
+  "name": "photosurfer",
+  "version": "1.0.0",
+  "description": "discord bot for grabbing random photos from a channel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Init-mb46/Discord-Photo-Surfer.git"
+  },
+  "author": "mb46",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Init-mb46/Discord-Photo-Surfer/issues"
+  },
+  "homepage": "https://github.com/Init-mb46/Discord-Photo-Surfer#readme",
+  "dependencies": {
+    "discord.js": "^13.8.0"
+  }
+}
