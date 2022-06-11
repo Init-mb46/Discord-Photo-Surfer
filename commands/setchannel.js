@@ -14,7 +14,7 @@ module.exports = {
     async execute(interaction) {
         const {options} = interaction;
         const channel = options.getChannel("channel");
-        if (channel != Constants.ChannelTypes.GUILD_TEXT) {
+        if (channel.type != Constants.ChannelTypes.GUILD_TEXT) {
             await interaction.reply(
                 {embeds: [new MessageEmbed()
                     .setTitle("Set Channel")
