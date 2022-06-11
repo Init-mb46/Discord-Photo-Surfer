@@ -18,7 +18,7 @@ module.exports = {
             await interaction.reply(
                 {embeds: [new MessageEmbed()
                     .setTitle("Set Channel")
-                    .setDescription("Invalid channel type provided, only text channels are allowed.")
+                    .setDescription(`Invalid channel type provided \"${channel.type}\", only text channels are allowed.`)
                     .setColor(Constants.Colors.BLURPLE)],
                 ephemeral: false});
             return;
