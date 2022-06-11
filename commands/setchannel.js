@@ -16,7 +16,7 @@ module.exports = {
         const channel = options.getChannel("channel");
         if (channel != Constants.ChannelTypes.GUILD_TEXT) {
             await interaction.reply(
-                {embed: [new MessageEmbed()
+                {embeds: [new MessageEmbed()
                     .setTitle("Set Channel")
                     .setDescription("Invalid channel type provided, only text channels are allowed.")
                     .setColor(Constants.Colors.BLURPLE)],
