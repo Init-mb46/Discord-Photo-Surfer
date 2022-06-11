@@ -20,7 +20,7 @@ module.exports = {
                     .setTitle("Set Channel")
                     .setDescription("Invalid channel type provided, only text channels are allowed.")
                     .setColor(Constants.Colors.BLURPLE)],
-                epheremal: false});
+                ephemeral: false});
             return;
         }
         await interaction.reply(`channel: ${channel}`);
